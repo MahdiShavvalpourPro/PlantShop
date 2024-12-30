@@ -1,0 +1,110 @@
+  @font-face {
+      font-family: "Yekan Bakh";
+      src:
+          local('YekanBakhFaNum-Black'),
+          url(../Fonts/ttf/YekanBakhFaNum-Black.ttf) format('truetype');
+  }
+
+  @font-face {
+      font-family: "Yekan Bakh light";
+      src:
+          local('YekanBakhFaNum-light'),
+          url(../Fonts/ttf/YekanBakhFaNum-Light.ttf) format('truetype');
+  }
+
+
+  :root {
+      --primary-color: #2b3d33;
+      --secondary-color: #465A50;
+  }
+
+  body {
+      font-family: "Yekan Bakh";
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #DFD9CD;
+      font-size: 16px;
+  }
+
+
+  .container {
+      display: flex;
+      height: 100vh;
+  }
+
+  .logo {
+      display: inline-block;
+      z-index: 2;
+      position: absolute;
+      width: 120px;
+      left: 31px;
+      top: 31px;
+  }
+
+  .logo img {
+      width: 100px;
+      margin-right: 10px;
+  }
+
+  .form-section {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+      background-color: #DFD9CD;
+      /* background-color: #ffffff; */
+  }
+
+
+  h1 {
+      font-size: 70px;
+      margin: 0 0 10px;
+      color: #28342e;
+  }
+
+  .form-section p {
+      font-size: 30px;
+      color: #2b3d33;
+  }
+
+  p a {
+      color: var(--secondary-color);
+      text-decoration: none;
+  }
+
+  form {
+      width: 100%;
+      max-width: 400px;
+  }
+
+  input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #B1B3A7;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-family: "Yekan Bakh light";
+      background-color: #B1B3A7;
+      color: #28342e;
+  }
+
+  .btnRegister {
+      width: 420px;
+      padding: 10px;
+      background-color: #28342e;
+      color: #DFD9CD;
+      border: none;
+      border-radius: 5px;
+      font-size: 23px;
+      cursor: pointer;
+      font-family: "Yekan Bakh";
+      margin-top: 30px;
+  }
+
+  .btnRegister:hover {
+      background-color: var(--secondary-color);
+  }

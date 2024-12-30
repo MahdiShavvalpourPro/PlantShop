@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جزئیات محصول</title>
+    <link rel="stylesheet" href="Styles/index.css">
+    <link rel="stylesheet" href="Styles/product-detail.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <a class="logo" href="Index.html"><img src="images/LogoForFooter.png" alt="لوگوی سایت سبزینو"></a>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="Index.html">
+                            <img src="Images/menu.png" alt="">
+                            دسته بندی محصولات
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Learning.html">
+                            <img src="Images/online-learning.png" alt="">
+                            آموزش
+                        </a>
+                    </li>
+                    <li>
+                        <a href="ContactUs.html">
+                            <img src="Images/support (1).png" alt="">
+                            ارتباط با ما
+                        </a>
+                    </li>
+                    <li>
+                        <a href="aboutUs.html">
+                            <img src="Images/group.png" alt="">
+                            درباره ما
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="auth">
+                <div class="right">
+                    <img class="login__image" src="Images/login.png" alt="">
+                    <p>
+                        <a href="Login.html" class="login">ورود</a>
+                    </p>
+                    <p>
+                        <a href="Register.html" class="register">ثبت نام</a>
+                    </p>
+                </div>
+                <div class="left">
+                    <img class="basket__icon" src="Images/shopping_cart.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="holder">
+            <div class="gallery">
+                <div class="main-image">
+                    <img id="currentImage" src="Images/eng_1.jpg" alt="Main Image">
+                </div>
+                <div class="thumbnails">
+                    <img src="Images/eng_2.jpg" alt="Thumbnail 1" onclick="changeImage(this)" class="active">
+                    <img src="Images/product_1.jpg" alt="Thumbnail 2" onclick="changeImage(this)">
+                    <img src="Images/product_2.jpg" alt="Thumbnail 3" onclick="changeImage(this)">
+                    <img src="Images/product_3.jpg" alt="Thumbnail 4" onclick="changeImage(this)">
+                </div>
+            </div>
+
+            <div class="introduction-container">
+                <h1>کراسولا خرفه طرح بونسای</h1>
+                <p>
+                    گلدان کراسولا خرفه طرح بونسای یکی از گیاهان رونده و خودرو در مناطق کوهستانی و البته مناطق جنوبی
+                    ایران است. مردم جنوب ایران عادت به دیدن این گیاه در سبزی خوردن را دارند و از آن تغذیه می کنند.
+                    کراسولا خرفه رشد بسیار سریعی دارد و به سرعت ساقه ای تنومند به دست می آورد. رنگ ساقه خرفه قرمز است و
+                    در اندک زمانی به ساقه ای چوبی تبدیل می شود. خرفه کروسلا نوعی خرفه با رشد کندتر و برگ های کمتر است و
+                    به عنوان گل آپارتمانی نور دوست کاربرد دارد. خرفه کراسولا در شرایط خوب پتانسیل تبدیل شدن به بنسای
+                    خرفه یا بنسای کراسولا را نیز دارد.
+                </p>
+                <div class="tags">
+                    <ul>
+                        <li>#روزمادر</li>
+                        <li>#هدیه</li>
+                        <li>#گل-تزئینی</li>
+                        <li>#دکوراسیون</li>
+                        <li>#گل</li>
+                    </ul>
+                </div>
+                <p class="product_price">قیمت : ۶۱۷,۰۰۰ تومان </p>
+                <div class="basket">
+                    <div class="quantity" id="quantity">0</div>
+                    <div class="add-to-cart" onclick="addToCart()">
+                        <span>افزودن به سبد خرید</span>
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+
+                    </div>
+                    <div class="remove-from-cart" onclick="decreaseQuantity()">
+                        <svg class="micon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+
+                    </div>
+                </div>
+                <p class="maintenance">روش های نگهداری</p>
+                <p class="maintenance-description">آنتریوم نازنین ما از تابش مستقیم آفتاب رنج میبرد، بهترین نور برای او
+                    نور غیرمستقیم کنار پنجره است. در
+                    بهار و تابستان بین دو آبیاری خاک گلدان حتما باید خشک باشد، هفته ای یک بار آبیاری، در زمستان کفایت می
+                    کند. این گلدان به رطوبت زیادی احتیاج ندارد، با ریختن آب در زیر گلدانی سنگریزه دار رطوبت دائمی و
+                    پایدار ایجاد کنید، مواظب باشید ته گلدان با آب در ارتباط نباشد. در مورد غبارپاشی نیز این نکته را مورد
+                    نظر قرار دهید که در شش ماهه نخست سال تقریبا هر روز آن را غبارپاشی کنید و در فصول بعد یکبار در هفته
+                    رطوبت برگ ها را حفظ می کند. برای تمیز نمودن برگ های زیبای گلدان آنتریوم از پارچه مرطوب استفاده کنید،
+                    در صورت نیاز به مواد براق کننده شیمیایی فقط هرماه یکبار استفاده کنید.</p>
+                </p>
+                <ul>
+                    <li class="warning">
+                        گل های ما بر مبنای سفارش، هر روز صبح از مزرعه چیده می شوند، بنابراین اگر تمایل دارید سفارش خود
+                        را
+                        همان روز دریافت کنید می بایست قبل از ساعت ۷:۰۰ صبح سفارش خود را ثبت کنید. در ضمن زمان تحویل
+                        سفارش از
+                        ساعت ۱۱:۰۰ صبح می باشد.
+                    </li>
+                    <li class="warning">ارسال مرسوله آنی در حال حاضر فقط برای شهر کاشان فعال است</li>
+                    <li class="warning">
+                        هزینه ارسال سفارش برای خرید های بالاتر از ۳۵۰,۰۰۰ تومان رایگان می باشد.
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="product">
+            <div class="product__header">
+                <h3 class="section__title">
+                    محصولات مشابه</h3>
+                <!-- <a href="#" class="section__link">نمایش همه</a> -->
+            </div>
+            <div class="row">
+                <div class="product__cart">
+                    <img class="product__image" src="/images/product_1.jpg" alt="product 1">
+                    <div class="product__name__price">
+                        <span class="product__name">
+                            گیاه فلوریان
+                        </span>
+                        <span class="product__price-number">
+                            1,200,000
+                        </span>
+                    </div>
+                    <div class="product__desc">
+                        <a class="product__descriptions" href="">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        </a>
+                    </div>
+
+                    <div class="product__wrapper">
+                        <div class="product_purchased">
+                            <span>توسط 121 نفر خریداری شده</span>
+                        </div>
+                        <div class="product__rating">
+                            <span class="product__rating-number">4.5</span>
+                            <span class="product__rating-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#e6d61a">
+                                    <path fill-rule="evenodd"
+                                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                        clip-rule="evenodd" fill="#f5bd05" />
+                                </svg>
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="product__cart">
+                    <img class="product__image" src="/images/product_2.jpg" alt="product 1">
+                    <div class="product__name__price">
+                        <span class="product__name">
+                            گیاه فلوریان
+                        </span>
+                        <span class="product__price-number">
+                            1,200,000
+                        </span>
+                    </div>
+                    <div class="product__desc">
+                        <a class="product__descriptions" href="">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        </a>
+                    </div>
+
+                    <div class="product__wrapper">
+                        <div class="product_purchased">
+                            <span>توسط 121 نفر خریداری شده</span>
+                        </div>
+                        <div class="product__rating">
+                            <span class="product__rating-number">4.5</span>
+                            <span class="product__rating-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#e6d61a">
+                                    <path fill-rule="evenodd"
+                                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                        clip-rule="evenodd" fill="#f5bd05" />
+                                </svg>
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="product__cart">
+                    <img class="product__image" src="/images/product_3.jpg" alt="product 1">
+                    <div class="product__name__price">
+                        <span class="product__name">
+                            گیاه فلوریان
+                        </span>
+                        <span class="product__price-number">
+                            1,200,000
+                        </span>
+                    </div>
+                    <div class="product__desc">
+                        <a class="product__descriptions" href="">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        </a>
+                    </div>
+
+                    <div class="product__wrapper">
+                        <div class="product_purchased">
+                            <span>توسط 121 نفر خریداری شده</span>
+                        </div>
+                        <div class="product__rating">
+                            <span class="product__rating-number">4.5</span>
+                            <span class="product__rating-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#e6d61a">
+                                    <path fill-rule="evenodd"
+                                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                        clip-rule="evenodd" fill="#f5bd05" />
+                                </svg>
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="product__cart">
+                    <img class="product__image" src="/images/product_1.jpg" alt="product 1">
+                    <div class="product__name__price">
+                        <span class="product__name">
+                            گیاه فلوریان
+                        </span>
+                        <span class="product__price-number">
+                            1,200,000
+                        </span>
+                    </div>
+                    <div class="product__desc">
+                        <a class="product__descriptions" href="">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        </a>
+                    </div>
+
+                    <div class="product__wrapper">
+                        <div class="product_purchased">
+                            <span>توسط 121 نفر خریداری شده</span>
+                        </div>
+                        <div class="product__rating">
+                            <span class="product__rating-number">4.5</span>
+                            <span class="product__rating-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#e6d61a">
+                                    <path fill-rule="evenodd"
+                                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                        clip-rule="evenodd" fill="#f5bd05" />
+                                </svg>
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="product__cart">
+                    <img class="product__image" src="/images/product_4.jpg" alt="product 1">
+                    <div class="product__name__price">
+                        <span class="product__name">
+                            گیاه فلوریان
+                        </span>
+                        <span class="product__price-number">
+                            1,200,000
+                        </span>
+                    </div>
+                    <div class="product__desc">
+                        <a class="product__descriptions" href="">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        </a>
+                    </div>
+
+                    <div class="product__wrapper">
+                        <div class="product_purchased">
+                            <span>توسط 121 نفر خریداری شده</span>
+                        </div>
+                        <div class="product__rating">
+                            <span class="product__rating-number">4.5</span>
+                            <span class="product__rating-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#e6d61a">
+                                    <path fill-rule="evenodd"
+                                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                        clip-rule="evenodd" fill="#f5bd05" />
+                                </svg>
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="product__header">
+            <h3 class="section__title">
+                امتیاز و دیدگاه کاربران</h3>
+        </div>
+
+        <div class="filter">
+            <h3>فیلتر بر اساس</h3>
+            <ul>
+                <li>جدیدترین</li>
+                <li>بهترین ها</li>
+                <li>بدترین ها</li>
+                <li>قیمت</li>
+            </ul>
+            <div class="ideas">
+                <div class="idea">
+                    <p class="username">کاربر سبزینو</p>
+                    <p> خوبیش اینکه که به دل میشینه</p>
+                    <div class="like">
+                        <p class="time">3 روز پیش</p>
+                        <div class="svgs">
+                            <svg class="a" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+                            </svg>
+                            <svg class="a" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M7.498 15.25H4.372c-1.026 0-1.945-.694-2.054-1.715a12.137 12.137 0 0 1-.068-1.285c0-2.848.992-5.464 2.649-7.521C5.287 4.247 5.886 4 6.504 4h4.016a4.5 4.5 0 0 1 1.423.23l3.114 1.04a4.5 4.5 0 0 0 1.423.23h1.294M7.498 15.25c.618 0 .991.724.725 1.282A7.471 7.471 0 0 0 7.5 19.75 2.25 2.25 0 0 0 9.75 22a.75.75 0 0 0 .75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 0 0 2.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384m-10.253 1.5H9.7m8.075-9.75c.01.05.027.1.05.148.593 1.2.925 2.55.925 3.977 0 1.487-.36 2.89-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398-.306.774-1.086 1.227-1.918 1.227h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 0 0 .303-.54" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="idea">
+                    <p class="username">کاربر سبزینو</p>
+                    <p> خوبیش اینکه که به دل میشینه</p>
+                    <div class="like">
+                        <p class="time">3 روز پیش</p>
+                        <div class="svgs">
+                            <svg class="a" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+                            </svg>
+                            <svg class="a" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M7.498 15.25H4.372c-1.026 0-1.945-.694-2.054-1.715a12.137 12.137 0 0 1-.068-1.285c0-2.848.992-5.464 2.649-7.521C5.287 4.247 5.886 4 6.504 4h4.016a4.5 4.5 0 0 1 1.423.23l3.114 1.04a4.5 4.5 0 0 0 1.423.23h1.294M7.498 15.25c.618 0 .991.724.725 1.282A7.471 7.471 0 0 0 7.5 19.75 2.25 2.25 0 0 0 9.75 22a.75.75 0 0 0 .75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 0 0 2.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384m-10.253 1.5H9.7m8.075-9.75c.01.05.027.1.05.148.593 1.2.925 2.55.925 3.977 0 1.487-.36 2.89-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398-.306.774-1.086 1.227-1.918 1.227h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 0 0 .303-.54" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="idea">
+                    <p class="username">کاربر سبزینو</p>
+                    <p> خوبیش اینکه که به دل میشینه</p>
+                    <div class="like">
+                        <p class="time">3 روز پیش</p>
+                        <div class="svgs">
+                            <svg class="a" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+                            </svg>
+                            <svg class="a" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M7.498 15.25H4.372c-1.026 0-1.945-.694-2.054-1.715a12.137 12.137 0 0 1-.068-1.285c0-2.848.992-5.464 2.649-7.521C5.287 4.247 5.886 4 6.504 4h4.016a4.5 4.5 0 0 1 1.423.23l3.114 1.04a4.5 4.5 0 0 0 1.423.23h1.294M7.498 15.25c.618 0 .991.724.725 1.282A7.471 7.471 0 0 0 7.5 19.75 2.25 2.25 0 0 0 9.75 22a.75.75 0 0 0 .75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 0 0 2.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384m-10.253 1.5H9.7m8.075-9.75c.01.05.027.1.05.148.593 1.2.925 2.55.925 3.977 0 1.487-.36 2.89-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398-.306.774-1.086 1.227-1.918 1.227h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 0 0 .303-.54" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="idea">
+                    <p class="username">کاربر سبزینو</p>
+                    <p> خوبیش اینکه که به دل میشینه</p>
+                    <div class="like">
+                        <p class="time">3 روز پیش</p>
+                        <div class="svgs">
+                            <svg class="a" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+                            </svg>
+                            <svg class="a" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M7.498 15.25H4.372c-1.026 0-1.945-.694-2.054-1.715a12.137 12.137 0 0 1-.068-1.285c0-2.848.992-5.464 2.649-7.521C5.287 4.247 5.886 4 6.504 4h4.016a4.5 4.5 0 0 1 1.423.23l3.114 1.04a4.5 4.5 0 0 0 1.423.23h1.294M7.498 15.25c.618 0 .991.724.725 1.282A7.471 7.471 0 0 0 7.5 19.75 2.25 2.25 0 0 0 9.75 22a.75.75 0 0 0 .75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 0 0 2.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384m-10.253 1.5H9.7m8.075-9.75c.01.05.027.1.05.148.593 1.2.925 2.55.925 3.977 0 1.487-.36 2.89-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398-.306.774-1.086 1.227-1.918 1.227h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 0 0 .303-.54" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div style="margin-bottom: 180px; "></div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="cover">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>لینک‌های مفید</h3>
+                    <ul>
+                        <li><a href="">محصولات</a></li>
+                        <li><a href="">پر فروش ترین ها</a></li>
+                        <li><a href="">تخفیفات شگفت‌انگیز</a></li>
+                        <li><a href="">آموزش‌های نگهداری</a></li>
+                        <li><a href="">ارسال سریع</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>درباره ما</h3>
+                    <ul>
+                        <li><a href="">درباره ما</a></li>
+                        <li><a href="">ارتباط با ما</a></li>
+                        <li><a href="">نشانی ما</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section logo-section">
+                    <img src="/Images/LogoForFooter.png" alt="PlantShop Logo" class="footer-logo">
+                    <h2>PlantShop</h2>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Shauvulpour. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- EndFooter -->
+
+
+
+
+
+</body>
+
+<script src="Js/gallery.js"></script>
+
+</html>

@@ -1,0 +1,321 @@
+.holder {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.gallery {
+    max-width: 30%;
+    /* border: 1px solid black; */
+    padding: 0;
+    margin: 0;
+    height: 700px;
+    margin-top: 130px;
+}
+
+.main-image img {
+    width: 400px;
+    border-radius: 10px;
+    height: 600px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: top;
+    border: 3px solid #beb8be;
+}
+
+.thumbnails {
+    display: flex;
+    gap: 10px;
+    margin-top: -100px;
+    justify-content: center;
+}
+
+.thumbnails img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.thumbnails img.active {
+    border: 3px solid #817e81;
+    /* border-color: #333; */
+}
+
+
+.introduction-container {
+    text-align: right;
+    color: #28342e;
+    /* border: 1px solid red; */
+    width: 70%;
+}
+
+.introduction-container h1 {
+    margin-top: 127px;
+    margin-right: 20px;
+    font-family: "Yekan Bakh";
+    font-size: 60px;
+    position: relative;
+}
+
+.introduction-container h1::before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    background-color: #28342e;
+    height: 6px;
+    border-radius: 10px;
+    top: 109px;
+    left: 0;
+}
+
+
+
+.introduction-container p {
+    font-family: 'Yekan Bakh light';
+    margin-top: 65px;
+    margin-right: 20px;
+    width: 100%;
+    font-size: 21px;
+    text-align: justify;
+    line-height: 37px;
+}
+
+.tags {
+    text-align: left;
+    font-family: "Yekan Bakh";
+}
+
+.tags li {
+    list-style: none;
+    background-color: #fff;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.introduction-container .product_price {
+    font-family: "Yekan Bakh";
+    font-size: 40px;
+}
+
+.basket {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    margin-right: 20px;
+    font-family: 'Yekan Bakh light';
+}
+
+.quantity {
+    background-color: #395d4f;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.add-to-cart {
+    display: flex;
+    align-items: center;
+    background-color: #395d4f;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    gap: 8px;
+}
+
+.add-to-cart:hover {
+    background-color: #2c4a3d;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #395d4f;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.micon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #395d4f;
+    width: 40px;
+    height: 40px;
+    border-radius: 11px;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.introduction-container .maintenance {
+    font-family: "Yekan Bakh";
+    font-size: 40px;
+    margin-top: 100px;
+}
+
+.introduction-container .maintenance-description {
+    font-family: "Yekan Bakh light";
+    margin-right: 20px;
+    width: 100%;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 37px;
+    background-color: #ccc8bd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    color: #28342e;
+}
+
+.introduction-container ul {
+    list-style: none;
+}
+
+.introduction-container .warning {
+    position: relative;
+    margin-top: 30px;
+    font-weight: bold;
+    font-family: "yekan bakh light";
+    line-height: 2;
+    margin-right: 50px;
+}
+
+.introduction-container .warning::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-image: url(../Images/leaves.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.filter {
+    width: 80%;
+    height: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    /* border: 5px solid black; */
+    position: relative;
+}
+
+.filter h3 {
+    position: relative;
+    font-family: "Yekan Bakh";
+    font-size: 30px;
+    margin-right: 80px;
+    color: #28342e;
+}
+
+.filter h3::before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 1060px;
+    background-color: #28342e;
+    height: 2px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    display: inline-block;
+    margin-left: 19px;
+}
+
+
+.filter ul {
+    margin-right: 67px;
+}
+
+.filter li {
+    font-family: "Yekan Bakh light";
+    list-style: none;
+    display: inline;
+    margin-right: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    color: #2c4a3d;
+}
+
+.ideas {
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+.idea {
+    text-align: right;
+    font-size: 20px;
+    font-family: "Yekan Bakh light";
+    /* border: 1px solid black; */
+    background-color: #d0c8b7;
+    padding: 10px;
+    border-radius: 10px;
+    width: 285px;
+    height: 275px;
+    height: 211px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(7, 107, 49, 0.1);
+
+}
+
+.idea .username {
+    font-size: 15px;
+    width: 260px;
+    height: 20px;
+}
+
+.idea p:nth-child(2) {
+    width: 100%;
+    height: 90px;
+    font-size: 20px;
+
+}
+
+.like {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.like .time {
+    display: inline;
+    font-size: 18px;
+}
+
+.svgs {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

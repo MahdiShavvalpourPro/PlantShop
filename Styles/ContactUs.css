@@ -1,0 +1,222 @@
+:root {
+    --primary-color: #2b3d33;
+    --secondary-color: #465A50;
+}
+
+.header_title {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 100px;
+}
+
+.sub_header_title {
+    font-size: 30px;
+    text-align: center;
+    font-family: "Yekan Bakh light";
+
+}
+
+.Communication {
+    width: 70%;
+    margin-top: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 200px;
+    font-family: "VAZIR";
+    /* border: 1px rgb(209, 68, 3) solid; */
+}
+
+
+.Communication_method_Container h3 {
+    font-size: 30px;
+    color: var(--primary-color);
+    padding: 0;
+    margin: 0;
+}
+
+.Communication_method_Container p {
+    color: var(--secondary-color);
+
+}
+
+.Communication_method_Container .comm_item {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.comm_item .item_icon {
+    width: 30px;
+    margin-left: 10px;
+    color: var(--primary-color);
+}
+
+.comm_item a {
+    color: var(--secondary-color);
+}
+
+.form-container {
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-family: "VAZIR";
+    /* border: 1px solid red; */
+}
+
+.form-container label {
+    font-size: 14px;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bolder;
+}
+
+.form-container input:not([type="button"]):not([type="submit"]),
+.form-container textarea {
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(70, 90, 80, 0.1)
+}
+
+
+
+.form-container textarea {
+    resize: none;
+    height: 150px;
+}
+
+.form-group {
+    flex: 1 1 calc(50% - 20px);
+    margin-left: 10px;
+}
+
+.form-group.full-width {
+    flex: 1 1 100%;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-family: 'Vazir', sans-serif;
+}
+
+.btn_submit {
+    width: 100%;
+    /* height: 500px; */
+    font-family: "VAZIR";
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(70, 90, 80, 0.5);
+    height: 38px;
+    color: white;
+
+}
+
+.btn_submit:hover {
+    background-color: rgba(70, 90, 80, 0.1);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+
+.image_map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 70px;
+}
+
+.image_map img {
+    width: 70%;
+    height: 700px;
+    border-radius: 15px;
+}
+
+.news {
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    color: var(--primary-color);
+    height: 210px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 50px;
+    font-family: "DORAN-EXTRABOLD";
+}
+
+
+.right-section {
+    text-align: center;
+    margin-top: -36px;
+}
+
+.right-section h3 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.right-section p {
+    margin: 0;
+    padding: 0;
+    margin-top: -24px;
+}
+
+.subscription-form {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    height: 37px;
+    font-family: "DORAN-EXTRABOLD";
+}
+
+.subscription-form input {
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #555;
+    flex: 1;
+    outline: none;
+    direction: rtl;
+    border-left: 1px solid #ccc;
+    font-family: "VAZIR";
+}
+
+.subscription-form input::placeholder {
+    color: #999;
+}
+
+.subscription-form button {
+    background-color: #2c3531;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0;
+    white-space: nowrap;
+    font-family: "DORAN-EXTRABOLD";
+}
+
+.subscription-form button:hover {
+    background-color: var(--secondary-color);
+}

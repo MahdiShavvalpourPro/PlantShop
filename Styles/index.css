@@ -1,0 +1,852 @@
+@font-face {
+  font-family: "DORAN-EXTRABOLD";
+  src:
+    local('DORAN-EXTRABOLD'),
+    url(../Fonts/ttf/DORAN-EXTRABOLD.TTF) format('truetype');
+}
+
+@font-face {
+  font-family: "Vazir Bold";
+  src:
+    local('VAZIR-FD-WOL'),
+    url(../Fonts/ttf/VAZIR-FD-WOL.TTF) format('truetype');
+}
+
+@font-face {
+  font-family: "Yekan Bakh";
+  src:
+    local('YekanBakhFaNum-Black'),
+    url(../Fonts/ttf/YekanBakhFaNum-Black.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Yekan Bakh light";
+  src:
+    local('YekanBakhFaNum-light'),
+    url(../Fonts/ttf/YekanBakhFaNum-Light.ttf) format('truetype');
+}
+
+
+body {
+  font-family: "DORAN-EXTRABOLD";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #DFD9CD;
+  font-size: 16px;
+}
+
+
+.container {
+  width: 1672px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 27px;
+  /* border: 1px solid black; */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  align-items: center;
+  font-family: "Yekan Bakh light";
+  background-color: #9ca1aa;
+  border-radius: 50px;
+  position: sticky;
+  z-index: 1000; 
+}
+
+.header a:hover {
+  color: #465A50;
+}
+
+a.logo {
+  height: 100px;
+}
+
+.logo img {
+  width: 100px;
+  width: 100px;
+  scale: .8;
+}
+
+.logo a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #28342E;
+  transition: width 0.3s ease;
+}
+
+.logo a:hover::after {
+  width: 100%;
+}
+
+.menu {
+  padding: 10px 5px;
+  margin-right: -610px;
+  /* font-family: Arial, sans-serif; */
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  position: relative;
+  margin-left: 35px;
+}
+
+li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  /* border: 1px solid #ddd; */
+  border-radius: 5px;
+  transition: color 0.3s ease, background 0.3s ease;
+  margin-right: 2px;
+}
+
+li img {
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
+}
+
+.menu a:hover {
+  background: #DFD9CD;
+  color: #000;
+}
+
+.has-submenu .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.has-submenu:hover .submenu {
+  display: block;
+  flex-direction: column;
+}
+
+.submenu li {
+  margin: 0;
+}
+
+.submenu a {
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  color: #555;
+  transition: background 0.3s ease;
+}
+
+:root {
+  --primary-color: #2b3d33;
+  --secondary-color: #465A50;
+}
+
+.submenu a:hover {
+  background: var(--secondary-color);
+  color: white;
+}
+
+.auth {
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  padding-right: 17px;
+  margin-left: 70px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* box-shadow: 0 4px 6px rgba(7, 107, 49, 0.1); */
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+.auth .right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+}
+
+.auth .left {
+  margin-right: 27px;
+}
+
+.auth .right p {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.login {
+  text-decoration: none;
+  color: inherit;
+}
+
+.register {
+  text-decoration: none;
+  color: inherit;
+}
+
+.login__image {
+  width: 26px;
+  height: 26px;
+}
+
+.basket__icon {
+  width: 26px;
+  height: 26px;
+}
+
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.slider__image {
+  width: 1060;
+  height: 800;
+  box-shadow: 7px 11px 7px 13px rgb(0, 0, 0, 0.1);
+  border-radius: 50px;
+}
+
+.text-section {
+  padding: 20px;
+  text-align: center;
+  font-family: 'DORAN-EXTRABOLD', sans-serif;
+  line-height: 1.6;
+  width: 580px;
+}
+
+.main-text h1 {
+  font-size: 4rem;
+  color: #2b3d33;
+  margin: 0;
+  font-weight: bold;
+}
+
+.main-text p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.primary-btn,
+.secondary-btn {
+  font-size: 1.9rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-family: "Yekan Bakh";
+}
+
+.primary-btn {
+  border: 1px solid #2b3d33;
+  color: #2b3d33;
+  background-color: #DFD9CD;
+}
+
+.secondary-btn {
+  background-color: #2b3d33;
+  color: #ffffff;
+  /* border: 1px solid #2b3d33; */
+}
+
+.primary-btn:hover {
+  background-color: #3e5248;
+  color: white;
+}
+
+.secondary-btn:hover {
+  background-color: #DFD9CD;
+  border: 1px solid #2b3d33;
+  color: #2b3d33;
+}
+
+
+.product__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.section__title {
+  background-color: #465A50;
+  color: white;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+.section__link {
+  text-decoration: none;
+  color: #465A50;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.product__cart a {
+  text-decoration: none;
+}
+
+.product__cart {
+  width: 320px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.08);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-bottom: 22px;
+}
+
+.product__image {
+  max-width: 100%;
+  object-fit: cover;
+  /* border-top-left-radius: 15px;
+  border-top-right-radius: 15px; */
+}
+
+.product__name__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.product__name {
+  padding-right: 12px;
+  font-size: 30px;
+  color: #465A50;
+  margin-top: 12px;
+}
+
+.product__price-number {
+  padding-left: 12px;
+  color: #465A50;
+  margin-top: 12px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Vazir Bold";
+}
+
+.product__desc {
+  margin: 10px;
+  text-align: justify;
+}
+
+.product__descriptions {
+  text-decoration: none;
+  font-size: 13px;
+  color: #465A50;
+  font-weight: normal;
+  margin-top: 12px;
+  line-height: 1.6;
+}
+
+.product__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.product__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: 6px; */
+  padding: 6px;
+}
+
+.product__rating {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.product__rating-number {
+  font-size: 14;
+  font-family: "Vazir Bold";
+}
+
+.product__rating-icon {
+  width: 18px;
+  height: 18px;
+}
+
+
+.product_purchased {
+  font-size: 14px;
+  color: #9E9E9E;
+}
+
+.section__title__Selling {
+  background-color: white;
+  color: #465A50;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+
+.product__cart__Selling a {
+  text-decoration: none;
+}
+
+.product__cart__Selling {
+  width: 320px;
+  background-color: #465A50;
+  box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.08);
+  border-radius: 15px;
+  margin-bottom: 22px;
+}
+
+.product__name__Selling {
+  padding-right: 12px;
+  font-size: 30px;
+  color: white;
+  margin-top: 12px;
+}
+
+.product__price-number__Selling {
+  padding-left: 12px;
+  font-size: 10px;
+  color: #ffffff;
+  margin-top: 12px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Vazir Bold";
+
+}
+
+.product__descriptions_selling {
+  text-decoration: none;
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: normal;
+  margin-top: 12px;
+  line-height: 1.6;
+}
+
+.product_purchased__Selling {
+  font-size: 14px;
+  color: #d6d6d6;
+}
+
+.product__rating-number__Selling {
+  color: white;
+  font-family: "Vazir Bold";
+
+}
+
+.banner {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1677px;
+  margin-top: 100px;
+  height: 600px;
+
+}
+
+.image_banner {
+  width: 100%;
+  height: 80%;
+  border-radius: 20px;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.title__banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -330px;
+}
+
+.title__banner-header {
+  color: #ffffff;
+  font-size: 120px;
+}
+
+.title__banner-subheader {
+  margin-top: -101px;
+  color: white;
+  font-size: 40px;
+}
+
+.gallery-section {
+  padding: 20px;
+  margin: auto;
+  max-width: 1318;
+  height: 900;
+  position: relative;
+  font-family: "Yekan Bakh";
+  /* border: 1px solid coral; */
+}
+
+.gallery-title {
+  font-size: 50px;
+  font-family: "Yekan Bakh", sans-serif;
+  color: #28342E;
+  width: 38%;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  margin-bottom: -140px;
+}
+
+.gallery-title::before {
+  content: "";
+  width: 80px;
+  height: 80px;
+  display: block;
+  background-image: url(/Images/photo-gallery.png);
+  position: absolute;
+  top: 66px;
+  left: 0;
+  right: -5px;
+  bottom: 0;
+  z-index: -1;
+  background-size: cover;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+  height: 620px;
+  position: relative;
+
+}
+
+.gallery img {
+  border-radius: 20px;
+}
+
+.gallery-item-right {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 340px;
+  height: 520px;
+  position: absolute;
+  bottom: 0;
+  left: 70%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+
+}
+
+.gallery-item-left {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 340px;
+  height: 520px;
+  position: absolute;
+  left: 32%;
+  transform: translateX(-50%);
+  top: 0px;
+  border-radius: 20px;
+
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(0deg, #28342e, rgba(0, 0, 0, 0));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.overlay p {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 150;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.gallery-image-more {
+  padding-left: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+}
+
+.more_icon {
+  width: 40px;
+  height: 40px;
+}
+
+.gallery-image-more a {
+  text-decoration: none;
+  color: #28342E;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.gallery-image-more:hover a {
+  color: #465a50;
+}
+
+.gallery-description {
+  margin-top: 70px;
+  font-size: 28px;
+  line-height: 1.6;
+  color: #465a50;
+  font-family: "Yekan Bakh light";
+  padding-right: 30px;
+}
+
+.Advantages {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 300px;
+  height: auto;
+  max-width: 1212;
+}
+
+.Advantages__title {
+  text-align: center;
+  word-spacing: -10px;
+  font-size: 100px;
+  color: #465a50;
+}
+
+.Advantages__title .highlight {
+  color: #28342E;
+}
+
+.Advantage_items {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  background-color: #465a50;
+}
+
+.item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #28342E;
+  ;
+}
+
+.cart_image {
+  width: 100%;
+  height: 390px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.cart_title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+}
+
+.social {
+  margin-top: 50px;
+  margin-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 200px;
+  background-color: #465a50;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 20px;
+
+}
+
+.social_logo {
+  width: 270px;
+  height: 270px;
+  object-fit: cover;
+  margin-top: 0px;
+  margin-left: -144px;
+}
+
+.social_title h1 {
+  font-size: 100px;
+  font-weight: bold;
+  color: #dfd9cd;
+  margin: 0;
+  margin-left: 50px;
+}
+
+.social_title h1 span {
+  font-size: 100px;
+  font-weight: bold;
+  color: #94edc0;
+  margin: 0;
+}
+
+.social_title p {
+  font-size: 30px;
+  color: #dfd9cd;
+  margin: 0;
+  text-align: center;
+  font-family: "Yekan Bakh light";
+}
+
+footer {
+  width: 100%;
+  color: #ECECEC;
+  /* background-image: url(../Images/footer.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.cover {
+  background-color: #3e5248;
+  /* background-color: rgba(40, 52, 46, 0.5); */
+  padding: 20px 10px;
+  z-index: 2;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1500px;
+  margin: 20px auto 0px auto;
+}
+
+.footer-section {
+  flex: 0 1 250px;
+  margin: 10px;
+  transition: all 0.9s ease;
+}
+
+
+.footer-section h3 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  font-family: "Yekan Bakh";
+}
+
+.footer-section ul {
+  list-style: none;
+  line-height: 1.8;
+}
+
+.footer-section li {
+  margin-top: 10px;
+}
+
+.footer-section a {
+  font-family: "Yekan Bakh light";
+  text-decoration: none;
+  color: white;
+  margin-right: -20px;
+  font-size: 20px;
+}
+
+.footer-section a:hover {
+  color: #94edc0;
+  transform: scale(1.1);
+}
+
+.footer-section:nth-child(2) {
+  margin-right: -600px;
+}
+
+.logo-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  width: 80%;
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #ECECEC;
+  margin: 20px auto -20px auto;
+  font-size: 22px;
+  font-family: "Yekan Bakh";
+
+}
