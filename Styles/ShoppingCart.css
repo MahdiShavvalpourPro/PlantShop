@@ -1,0 +1,336 @@
+:root {
+    --primary-color: #2b3d33;
+    --secondary-color: #465A50;
+}
+
+
+.Header-basket {
+    font-family: "Yekan Bakh";
+    font-size: 40px;
+    margin-right: 170px;
+    display: inline;
+}
+
+.Header-Delivery {
+    font-family: "Yekan Bakh";
+    font-size: 40px;
+    margin-right: 720px;
+    display: inline;
+}
+
+
+.BasketContainer {
+    width: 80%;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+}
+
+.ShoppingCart {
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.Cart {
+    width: 95%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 0;
+    gap: 1px;
+    padding: 20px;
+    font-family: "Yekan Bakh";
+    /* border-bottom: 1px solid #000; */
+}
+
+.right {
+    width: 70%;
+    display: flex;
+}
+
+
+.Cart img {
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.CartDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.CartDetails :first-child {
+    margin-right: 20px;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+
+.Available {
+    font-size: 12px;
+    width: 92px;
+    margin-bottom: 0;
+    margin-right: 20px;
+    color: var(--secondary-color);
+    background-color: #E6E6E6;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.Notavailable {
+    font-size: 12px;
+    width: 98px;
+    margin-bottom: 0;
+    margin-right: 20px;
+    color: rgb(185, 17, 17);
+    background-color: #E6E6E6;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.counter {
+    margin-right: 20px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 80px;
+    padding: 0 5px;
+    background-color: #f9f9f9;
+    font-family: "Yekan Bakh light";
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+#count {
+    margin: 0 10px;
+    font-size: 16px;
+    border-radius: 50%;
+}
+
+
+.lefts {
+    width: 20%;
+    /* margin-left: 40px; */
+}
+
+.lefts p {
+    font-size: 40px;
+}
+
+.btnDelete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #000; */
+    font-family: "Yekan Bakh";
+    color: #746565;
+}
+
+.btnDelete svg {
+    width: 20px;
+}
+
+.btnDelete input {
+    font-family: "Yekan Bakh light";
+    color: #746565;
+}
+
+
+
+
+.Delivery {
+    /* border: 1px solid #000; */
+    background-color: white;
+    border-radius: 10px;
+    width: 25%;
+    height: 80%;
+}
+
+.toggleWrapper {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+}
+
+.toggleContainer {
+    font-family: "Yekan Bakh";
+    display: flex;
+    margin-right: 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    border: 6px solid #E6E6E6;
+    border-radius: 10px;
+    background: #E6E6E6;
+    font-weight: bold;
+    color: var(--secondary-color);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.toggleContainer::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--secondary-color);
+    border-radius: 10px;
+    transition: all 0.3s;
+    z-index: 0;
+}
+
+.toggleCheckbox {
+    display: none;
+}
+
+.toggleCheckbox:checked+.toggleContainer::after {
+    left: 50%;
+}
+
+.toggleContainer .toggleOption {
+    text-align: center;
+    padding: 6px;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
+}
+
+.toggleCheckbox:checked+.toggleContainer .toggleOption:first-child {
+    color: rgb(255, 255, 255);
+}
+
+.toggleCheckbox:checked+.toggleContainer .toggleOption:last-child {
+    color: #E6E6E6;
+}
+
+.toggleCheckbox+.toggleContainer .toggleOption:first-child {
+    color: #E6E6E6;
+
+}
+
+.toggleCheckbox+.toggleContainer .toggleOption:last-child {
+    color: rgb(255, 255, 255);
+}
+
+
+.Discound {
+    border-top: 3px dashed #cfcece;
+    border-bottom: 3px dashed #cfcece;
+    font-family: "Yekan Bakh";
+    font-size: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.subscription-form {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    height: 37px;
+    /* font-family: "Yekan Bakh"; */
+    /* padding: 10px; */
+    margin-top: 20px;
+}
+
+.subscription-form input {
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #555;
+    flex: 1;
+    outline: none;
+    direction: rtl;
+    border-left: 1px solid #ccc;
+    font-family: "Yekan Bakh light";
+}
+
+.subscription-form input::placeholder {
+    color: #999;
+}
+
+.subscription-form button {
+    background-color: #E6E6E6;
+    color: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0;
+    white-space: nowrap;
+    font-family: "Yekan Bakh";
+}
+
+.subscription-form button:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.Subtotal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Yekan Bakh light";
+    margin: 0 10px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Yekan Bakh light";
+    gap: 6px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Yekan Bakh light";
+    font-weight: bolder;
+    margin: 0 10px;
+}
+
+.btn-pay {
+    background-color: #E6E6E6;
+    color: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: "Yekan Bakh";
+    margin: 0 auto;
+    width: 100%;
+}
+
+.btn-pay:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
