@@ -334,3 +334,30 @@
     background-color: var(--secondary-color);
     color: #fff;
 }
+
+
+.a {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Yekan Bakh";
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.b {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.b p {
+    margin-top: 0px;
+}
+
+.b img:nth-child(1) {
+    /* margin-right: 100px; */
+}
